@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CareerSync — Branded careers pages that stay in sync with your ATS</title>
+<title>CareerSync - Branded careers pages that stay in sync with your ATS</title>
 <meta name="description" content="CareerSync builds branded careers pages on your own domain that update automatically from Greenhouse, Lever, or Ashby. Launched in about a week, flat price.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
 
   html { scroll-behavior: smooth; }
 
-  html, body { overflow-x: hidden; }
+  html { overflow-x: hidden; }
 
   body {
     margin: 0;
@@ -362,12 +362,12 @@
     border-radius: 18px;
     padding: 48px;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1fr auto;
     gap: 32px;
     align-items: center;
   }
   .demo-card p { color: var(--slate); margin-top: 16px; font-size: 16px; }
-  .demo-cta { display: flex; justify-content: flex-start; }
+  .demo-cta { display: flex; justify-content: flex-end; }
 
   /* Pricing */
   .pricing-sub { margin-top: 16px; color: var(--slate); max-width: 62ch; }
@@ -485,6 +485,12 @@
     color: var(--slate);
     text-align: center;
     overflow: hidden;
+    flex-shrink: 0;
+  }
+  .founder-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .founder-text p { font-size: 16px; color: var(--ink); }
   .founder-meta {
@@ -601,7 +607,7 @@
       <a href="#demo">Demo</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-primary" href="TODO_CALENDLY_URL">Book an intro call</a>
+      <a class="btn btn-primary" href="https://calendly.com/mikebednarz001/30min" target="_blank" rel="noopener">Book an intro call</a>
     </nav>
   </div>
 </header>
@@ -614,9 +620,9 @@
       <div>
         <span class="sync-chip"><span class="sync-dot" aria-hidden="true"></span>Synced with your ATS · just now</span>
         <h1>A careers page that looks like your brand and <em>updates itself.</em></h1>
-        <p class="hero-lede">CareerSync builds a branded careers site on your own domain that stays automatically in sync with Greenhouse, Lever, or Ashby. Open a role in your ATS — it's live on your site in minutes. Close it — it's gone. Nobody at your company ever edits a job listing again.</p>
+        <p class="hero-lede">CareerSync builds a branded careers site on your own domain that stays automatically in sync with Greenhouse, Lever, or Ashby. Open a role in your ATS and it's live on your site in minutes. Close it and it's gone. Nobody at your company ever edits a job listing again.</p>
         <div class="hero-ctas">
-          <a href="TODO_CALENDLY_URL" class="btn btn-primary">Book an intro call</a>
+          <a href="https://calendly.com/mikebednarz001/30min" target="_blank" rel="noopener" class="btn btn-primary">Book an intro call</a>
           <a href="#demo" class="btn btn-ghost">See a live demo</a>
         </div>
         <p class="hero-subnote">Flat price · Launched in about a week · One DNS record to go live</p>
@@ -665,18 +671,18 @@
         <div class="compare-box today">
           <span class="compare-title">Today</span>
           <ul class="compare-list">
-            <li>boards.greenhouse.io/yourcompany — a list of links on a domain you don't own</li>
+            <li>boards.greenhouse.io/yourcompany: a list of links on a domain you don't own</li>
             <li>No story: no mission, team, or reason to join</li>
-            <li>Or worse — a static page listing a role you filled in March</li>
+            <li>Or worse, a static page listing a role you filled in March</li>
             <li>Invisible to Google's job search results</li>
           </ul>
         </div>
         <div class="compare-box with-cs">
           <span class="compare-title">With CareerSync</span>
           <ul class="compare-list">
-            <li>careers.yourcompany.com — your domain, your brand</li>
+            <li>careers.yourcompany.com: your domain, your brand</li>
             <li>Mission, team, and culture around every listing</li>
-            <li>Always current — synced from your ATS automatically</li>
+            <li>Always current and synced from your ATS automatically</li>
             <li>Structured data that puts roles in Google job search</li>
           </ul>
         </div>
@@ -706,7 +712,7 @@
         <div class="step-card">
           <span class="step-num">Step 03</span>
           <h3>Launch</h3>
-          <p>Your team adds one DNS record — careers.yourcompany.com is live with SSL, Google job indexing, and analytics. Nothing to install in your ATS.</p>
+          <p>Your team adds one DNS record, careers.yourcompany.com is live with SSL, Google job indexing, and analytics. Nothing to install in your ATS.</p>
         </div>
       </div>
     </div>
@@ -719,7 +725,7 @@
         <div>
           <span class="eyebrow">See it live</span>
           <h2>Tour a live CareerSync build.</h2>
-          <p>Tidewater Robotics is our demo client — browse the page, filter roles, open a listing. Everything you see is rendered live from an ATS-shaped feed, exactly how your page would work.</p>
+          <p>Tidewater Robotics is our demo client. Browse the page, filter roles, open a listing. Everything you see is rendered live from an ATS-shaped feed, exactly how your page would work.</p>
         </div>
         <div class="demo-cta">
           <a href="TODO_DEMO_URL" class="btn btn-primary">Open the demo →</a>
@@ -764,7 +770,7 @@
             <li>Analytics dashboard</li>
             <li class="excluded">On-site applications</li>
           </ul>
-          <a href="TODO_CALENDLY_URL" class="btn btn-primary">Book an intro call</a>
+          <a href="https://calendly.com/mikebednarz001/30min" target="_blank" rel="noopener" class="btn btn-primary">Book an intro call</a>
         </div>
 
         <div class="tier-card">
@@ -782,7 +788,7 @@
         </div>
       </div>
 
-      <p class="pricing-note">Hosting, monitoring, and small content edits: <strong>$75/mo</strong> after launch. Cancel anytime — the site is yours.</p>
+      <p class="pricing-note">Hosting, monitoring, and small content edits: <strong>$75/mo</strong> after launch. Cancel anytime, the site is yours.</p>
     </div>
   </section>
 
@@ -793,10 +799,10 @@
       <h2>Built by a recruiter who became an engineer.</h2>
 
       <div class="founder-card">
-        <div class="founder-photo">TODO_PHOTO</div>
+        <div class="founder-photo"><img src="assets/mike-headshot.jpg" alt="Mike, founder of CareerSync" width="120" height="120" loading="lazy"></div>
         <div class="founder-text">
-          <p><strong>Hi, I'm Mike.</strong> I spent years as a technical recruiter before becoming a frontend engineer — which means I've sent thousands of candidates to careers pages and watched exactly where companies lose them. CareerSync is the page I always wished my clients had: branded enough to tell their story, wired to the ATS so it's never out of date, and priced so a growing team can just say yes.</p>
-          <p class="founder-meta">Based in Raleigh, NC · <a href="TODO_LINKEDIN_URL">LinkedIn</a></p>
+          <p><strong>Hi, I'm Mike.</strong> I spent years as a technical recruiter before becoming a frontend engineer, which means I've sent thousands of candidates to careers pages and watched exactly where companies lose them. CareerSync is the page I always wished my clients had: branded enough to tell their story, wired to the ATS so it's never out of date, and priced so a growing team can just say yes.</p>
+          <p class="founder-meta">Based in Raleigh, NC · <a href="https://www.linkedin.com/in/mike-bednarz/" target="_blank" rel="noopener">LinkedIn</a></p>
         </div>
       </div>
     </div>
@@ -811,15 +817,15 @@
       <div class="faq-list">
         <details class="faq-item">
           <summary>Doesn't Greenhouse already give us a job board?</summary>
-          <p>It does — a themeable job list, hosted on Greenhouse's domain. What it can't become is a careers site: your domain, your story, your team and mission around the listings, with Google job indexing accruing to your own website. CareerSync is the page around the list — and it stays exactly as current as the board it reads from.</p>
+          <p>It creates a themeable job list, hosted on Greenhouse's domain. What it can't become is a careers site: your domain, your story, your team and mission around the listings, with Google job indexing accruing to your own website. CareerSync is the page around the list, and it stays exactly as current as the board it reads from.</p>
         </details>
         <details class="faq-item">
           <summary>What does our team have to set up or maintain?</summary>
-          <p>Almost nothing. Going live takes one DNS record (we send copy-paste instructions). There's nothing to install or configure inside your ATS, and after launch the page updates itself — open or close roles in your ATS like you always do.</p>
+          <p>Almost nothing. Going live takes one DNS record (we send copy-paste instructions). There's nothing to install or configure inside your ATS, and after launch the page updates itself. Open or close roles in your ATS like you always do.</p>
         </details>
         <details class="faq-item">
           <summary>Which ATS platforms do you support?</summary>
-          <p>Greenhouse, Lever, and Ashby today, with more on request. If you're on something else — or tracking roles in a spreadsheet — book a call and we'll figure out the right setup.</p>
+          <p>Greenhouse, Lever, and Ashby today, with more on request. If you're on something else, or tracking roles in a spreadsheet, book a call and we'll figure out the right setup.</p>
         </details>
         <details class="faq-item">
           <summary>How do candidates apply?</summary>
@@ -827,7 +833,7 @@
         </details>
         <details class="faq-item">
           <summary>How long does it take?</summary>
-          <p>About a week from kickoff to launch for most builds — the main variable is how quickly we get your brand assets and content.</p>
+          <p>About a week from kickoff to launch for most builds, the main variable is how quickly we get your brand assets and content.</p>
         </details>
         <details class="faq-item">
           <summary>Who owns the site?</summary>
@@ -843,7 +849,7 @@
       <div class="final-cta">
         <h2>Your next great hire is about to look you up.</h2>
         <p>Fifteen-minute intro call: we'll look at your current careers presence together and tell you honestly whether this is worth doing.</p>
-        <a href="TODO_CALENDLY_URL" class="btn btn-primary">Book an intro call</a>
+        <a href="https://calendly.com/mikebednarz001/30min" target="_blank" rel="noopener" class="btn btn-primary">Book an intro call</a>
       </div>
     </div>
   </section>
@@ -853,7 +859,7 @@
 <footer class="site-footer">
   <div class="wrap footer-row">
     <span>© 2026 CareerSync · Raleigh, NC</span>
-    <a href="mailto:TODO_EMAIL">hello@trycareersync.com</a>
+    <a href="mailto:hello@trycareersync.com">hello@trycareersync.com</a>
   </div>
 </footer>
 

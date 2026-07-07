@@ -485,6 +485,12 @@
     color: var(--slate);
     text-align: center;
     overflow: hidden;
+    flex-shrink: 0;
+  }
+  .founder-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .founder-text p { font-size: 16px; color: var(--ink); }
   .founder-meta {
@@ -793,7 +799,7 @@
       <h2>Built by a recruiter who became an engineer.</h2>
 
       <div class="founder-card">
-        <div class="founder-photo">TODO_PHOTO</div>
+        <div class="founder-photo"><img src="assets/mike-headshot.jpg" alt="Mike, founder of CareerSync" width="120" height="120" loading="lazy"></div>
         <div class="founder-text">
           <p><strong>Hi, I'm Mike.</strong> I spent years as a technical recruiter before becoming a frontend engineer, which means I've sent thousands of candidates to careers pages and watched exactly where companies lose them. CareerSync is the page I always wished my clients had: branded enough to tell their story, wired to the ATS so it's never out of date, and priced so a growing team can just say yes.</p>
           <p class="founder-meta">Based in Raleigh, NC · <a href="TODO_LINKEDIN_URL">LinkedIn</a></p>

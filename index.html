@@ -411,11 +411,25 @@
     letter-spacing: 0.1em;
     color: var(--slate);
   }
+  .tier-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0 2px;
+  }
   .tier-price {
     font-family: var(--font-display);
     font-weight: 800;
     font-size: 34px;
-    margin: 10px 0 2px;
+  }
+  .tier-price-old {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 19px;
+    color: var(--slate);
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
   }
   .tier-price-note {
     font-size: 12.5px;
@@ -745,8 +759,8 @@
       <div class="pricing-grid">
         <div class="tier-card">
           <span class="tier-name">Job Board</span>
-          <span class="tier-price">$1,500</span>
-          <span class="tier-price-note">one-time</span>
+          <span class="tier-price-row"><span class="tier-price-old">$1,500</span><span class="tier-price">$750</span></span>
+          <span class="tier-price-note">one-time · founding client rate</span>
           <ul class="tier-list">
             <li>Branded job board on your domain</li>
             <li>Search + department &amp; location filters</li>
@@ -761,8 +775,8 @@
         <div class="tier-card featured">
           <span class="tier-flag">Most popular</span>
           <span class="tier-name">Careers Site</span>
-          <span class="tier-price">$3,000</span>
-          <span class="tier-price-note">one-time</span>
+          <span class="tier-price-row"><span class="tier-price-old">$3,000</span><span class="tier-price">$1,500</span></span>
+          <span class="tier-price-note">one-time · founding client rate</span>
           <ul class="tier-list">
             <li>Everything in Job Board</li>
             <li>Mission, team &amp; benefits sections</li>
@@ -776,7 +790,7 @@
 
         <div class="tier-card">
           <span class="tier-name">Careers Site + Apply</span>
-          <span class="tier-price">$5,000</span>
+          <span class="tier-price-row"><span class="tier-price">$5,000</span></span>
           <span class="tier-price-note">one-time</span>
           <ul class="tier-list">
             <li>Everything in Careers Site</li>
